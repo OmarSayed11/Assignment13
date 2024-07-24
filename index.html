@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Store</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="product-container"></div>
+    <div id="product-details"></div>
+    <div id="cart-container"></div>
+
+    <input type="text" id="search-input" placeholder="Search products" />
+    <button onclick="searchProducts()">Search</button>
+
+    <button onclick="filterByType('beauty')">Filter Beauty</button>
+    <button onclick="filterByType('groceries')">Filter Food</button>
+    <button onclick="filterByType('fragrances')">Filter Perfumes</button>
+
+    <button onclick="sortByPrice('asc')">Sort by Price: Low to High</button>
+    <button onclick="sortByPrice('desc')">Sort by Price: High to Low</button>
+
+    <script src="index.js"></script>
+  </body>
+</html>
